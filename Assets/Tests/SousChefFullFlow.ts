@@ -1,6 +1,6 @@
 import {Scenario} from 'Leaf.lspkg/Scenarios/scenario/Scenario';
 import {expect} from 'Leaf.lspkg/Utils/common/Expect';
-import {CookInteractor, activeView, includes, snapshot} from './SousChefLeafSupport';
+import {CookInteractor, activeView, includes, snapshot, waitForLabel} from './SousChefLeafSupport';
 
 @component
 export class SousChefFullFlow extends Scenario {
@@ -26,15 +26,16 @@ export class SousChefFullFlow extends Scenario {
     for (let index = 0; index < titles.length; index++) {
       activeView('recipe');
       expect(snapshot().model.stepIndex).toBe(index);
-      includes('SousChef_StepLabel', 'Step ' + (index + 1) + ' of 7');
-      includes('SousChef_StepTitle', titles[index]);
-      includes('SousChef_Instruction', instructions[index]);
+      // UIKit Fit labels reveal after measurement, independently of the model update.
+      await waitForLabel('SousChef_StepLabel', 'Step ' + (index + 1) + ' of 7');
+      await waitForLabel('SousChef_StepTitle', titles[index]);
+      await waitForLabel('SousChef_Instruction', instructions[index]);
       await cook.pinch('SousChef_Next');
     }
     activeView('completion');
-    includes('SousChef_CompletionTitle', 'Nasi Goreng Spesial is ready to plate');
-    includes('SousChef_CompletionProgress', '7 of 7 steps completed');
-    includes('SousChef_CompletionGarnish', 'cucumber');
+    await waitForLabel('SousChef_CompletionTitle', 'Nasi Goreng Spesial is ready to plate');
+    await waitForLabel('SousChef_CompletionProgress', '7 of 7 steps completed');
+    await waitForLabel('SousChef_CompletionGarnish', 'cucumber');
     includes('SousChef_CompletionGarnish', 'fried shallots');
     includes('SousChef_CompletionGarnish', 'crackers');
   }

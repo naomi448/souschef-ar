@@ -79,23 +79,27 @@ export class SousChefUI extends BaseScriptComponent {
     this.label("SousChef_PanIllustration", "◯━━", 38, 4.2, 60);
     this.button("SousChef_Start", "Start", 38, 3.4, {type: "start"});
 
-    this.column("SousChef_ChecklistView", 38, 18.9, 0.15);
-    this.item("SousChef_ChecklistView", 38, 18.9);
-    this.label("SousChef_ChecklistTitle", "Ingredients", 38, 2.2, 38);
-    this.label("SousChef_ReadyCount", "0 of 10 ready.", 38, 1.6, 27);
+    // Fit the larger checklist into the existing 22 cm content area.
+    this.column("SousChef_ChecklistView", 38, 21.8, 0.15);
+    this.item("SousChef_ChecklistView", 38, 21.8);
+    this.label("SousChef_ChecklistTitle", "Ingredients", 38, 2.6, 46);
+    this.label("SousChef_ReadyCount", "0 of 10 ready.", 38, 2.0, 34);
     const gridHost = this.host("SousChef_ChecklistGrid");
-    this.item("SousChef_ChecklistGrid", 38, 11.7);
+    this.item("SousChef_ChecklistGrid", 38, 13.9);
     this.grid = gridHost.createComponent(GridLayout.getTypeName()) as GridLayout;
-    this.grid.width = 38; this.grid.height = 11.7;
+    this.grid.width = 38; this.grid.height = 13.9;
     this.grid.templateColumns = "1fr 1fr";
     this.grid.templateRows = "repeat(5, 1fr)";
     this.grid.columnGap = 0.55; this.grid.rowGap = 0.15;
     const gridItems: GridItem[] = [];
     for (let i = 0; i < 10; i++) {
       const name = "SousChef_Ingredient_" + i;
-      this.button(name, "☐ " + INGREDIENTS[i], 18.7, 2.2, {type: "toggleIngredient", index: i}, 23, false);
+      this.button(name, "☐ " + INGREDIENTS[i], 18.7, 2.65, {type: "toggleIngredient", index: i}, 30, false);
+      const content = this.labels.get(name)!;
+      content.textSizing = TextSizing.Hug;
+      content.padding = {top: 0.1, right: 0.4, bottom: 0.1, left: 0.4};
       const item = this.host(name).createComponent(GridItem.getTypeName()) as GridItem;
-      item.autoPlacement = false; item.gridRow = i % 5 + 1; item.gridColumn = Math.floor(i / 5) + 1;
+      item.autoPlacement = false; item.gridRow = i % 5; item.gridColumn = Math.floor(i / 5);
       gridItems.push(item);
     }
     this.grid.addItems(gridItems);
