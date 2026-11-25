@@ -1,0 +1,59 @@
+- !<AssetImportMetadata/393e09d7-73b1-4abe-81d0-cf1447c5efef>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 0627d629-cf59-4f78-8076-9cc2d0306a9d
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 0627d629-cf59-4f78-8076-9cc2d0306a9d
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 39274210-7eb0-49d8-bafb-3d2f4f8a20cd
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/39274210-7eb0-49d8-bafb-3d2f4f8a20cd>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  RunInEditor: false
+  ComponentUid: 299e9725-96c9-443b-ac5a-dfbcc7c6e1d5
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    chimeVolume: false
+    debugColliders: false
+    noticeDuration: false
+    timerChime: false
+    ui: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - ui: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      timerChime: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      debugColliders: false
+      chimeVolume: 0.350000
+      noticeDuration: !<float> 3.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType_1 ui
+    - // @input Component.AudioComponent timerChime
+    - // @input bool debugColliders
+    - // @input float chimeVolume = 0.35
+    - // @input float noticeDuration = 3

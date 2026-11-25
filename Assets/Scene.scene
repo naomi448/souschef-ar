@@ -1,0 +1,1820 @@
+- !<Scene/0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99>
+  PackagePath: ""
+  objects:
+    - !<own> 017b5991-73f2-46ad-bee1-2aa42470863c
+    - !<own> 00000000-0000-0065-0000-000000000064
+    - !<own> 0005641c-028d-459a-0000-000000014b4d
+    - !<own> 93b1ac4c-93d4-4e6a-9683-6ab42a1b89fd
+    - !<own> 8b2dd88e-f035-45f8-bb3b-1269b752b13a
+    - !<own> 36560218-540d-4492-812c-0a4ce1aa2064
+    - !<own> f326f349-9b8d-4f0c-a4e9-9289fa212afc
+    - !<own> 95480b5d-2f15-4981-ba1b-3f5342b4919a
+  layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
+    userLayers:
+      - id: 1
+        name: Layer 1
+        color: 0
+  RenderOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
+  RenderPreviewOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
+  RenderOverlayOutput: !<reference> 00000000-0000-0000-0000-000000000000
+  PhysicsRootWorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  HiddenInCaptureLayers: 0
+  HiddenInDisplayLayers: 0
+  PrefabPreviewEnvironmentInitialized: false
+  PrefabPreviewEnvironment: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/00000000-0000-0065-0000-000000000064>
+  PrefabRemaps:
+    []
+  Name: Camera Object
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 00000000-0000-0065-0000-000000000065
+    - !<own> e5553c8a-0b7e-4ef4-92d9-3e1318fb82c1
+- !<Camera/00000000-0000-0065-0000-000000000065>
+  PrefabRemaps:
+    []
+  Name: Camera
+  Enabled: true
+  renderLayer: 1
+  MipmapLevel: 0
+  RenderOrder: 0
+  Size: 20.000000
+  Near: 1.000000
+  Far: 10000.000000
+  Fov: 63.541019
+  ClearColor: !<CameraClearColor>
+    Mode: None
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  ClearDepth: !<CameraClearDepth>
+    Mode: Value
+    Value: 1.000000
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Aspect: 1.000000
+  CameraType: Perspective
+  DepthMode: Regular
+  DeviceProperty: All
+  AspectPreset: Custom
+  OitLayers: NoOit
+  RenderTarget: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
+  DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
+  DevicePropertiesSource: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/0005641c-028d-459a-0000-000000014b4d>
+  PrefabRemaps:
+    []
+  Name: Lighting
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 00056e79-b066-62ca-0000-000000001406
+    - !<own> 0005641c-028d-4630-0000-000000014b56
+  Components:
+    []
+- !<SceneObject/0005641c-028d-4630-0000-000000014b56>
+  PrefabRemaps:
+    []
+  Name: Light
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 40.000000, y: 85.000000, z: 20.000000}
+    Rotation: {x: 70.000000, y: 10.000000, z: 150.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0005641c-028d-463e-0000-000000014b59
+- !<LightSource/0005641c-028d-463e-0000-000000014b59>
+  PrefabRemaps:
+    []
+  Name: Light Source
+  Enabled: true
+  renderLayer: 1310719
+  LightType: Directional
+  Intensity: 1.000000
+  ShadowDensity: 0.440000
+  ShadowBlurRadius: 4.000000
+  ShadowTextureSize: 512
+  AutoLightSourcePosition: true
+  AutoShadowFrustumSize: true
+  AutoShadowFrustumSizeExtend: 2.000000
+  ShadowFrustumSize: 30.000000
+  ShadowFrustumNearClipPlane: 1.000000
+  ShadowFrustumFarClipPlane: 1000.000000
+  UseEnvMapFromCamera: false
+  EnvMapFromCameraMode: Auto
+  EstimationSharpness: 1.000000
+  EnvMapExposure: 1.000000
+  EnvMapRotation: 0.000000
+  DiffuseEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  SpecularEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  SpecularCubemapTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  InnerConeAngle: 0.000000
+  OuterConeAngle: 45.000000
+  FalloffType: None
+  FalloffRange: .inf
+  ShadowType: None
+- !<SceneObject/00056e79-b066-62ca-0000-000000001406>
+  PrefabRemaps:
+    []
+  Name: Ambient Light
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 65.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 00056e79-b066-62f1-0000-000000001409
+- !<LightSource/00056e79-b066-62f1-0000-000000001409>
+  PrefabRemaps:
+    []
+  Name: Light Source
+  Enabled: true
+  renderLayer: 1310719
+  LightType: Ambient
+  Intensity: 1.000000
+  ShadowDensity: 1.000000
+  ShadowBlurRadius: 0.000000
+  ShadowTextureSize: 512
+  AutoLightSourcePosition: false
+  AutoShadowFrustumSize: false
+  AutoShadowFrustumSizeExtend: 2.000000
+  ShadowFrustumSize: 30.000000
+  ShadowFrustumNearClipPlane: 1.000000
+  ShadowFrustumFarClipPlane: 1000.000000
+  UseEnvMapFromCamera: false
+  EnvMapFromCameraMode: Auto
+  EstimationSharpness: 1.000000
+  EnvMapExposure: 1.000000
+  EnvMapRotation: 0.000000
+  DiffuseEnvTexture: !<reference> 2013a19b-93c1-4f21-b7ea-876a33550c7b
+  SpecularEnvTexture: !<reference> d795fd46-e16b-4cb9-8dfb-4ef227298f7a
+  SpecularCubemapTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  InnerConeAngle: 0.000000
+  OuterConeAngle: 45.000000
+  FalloffType: None
+  FalloffRange: .inf
+  ShadowType: None
+- !<SceneObject/017b5991-73f2-46ad-bee1-2aa42470863c>
+  PrefabRemaps:
+    []
+  Name: ThemeManager
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ca24f78b-a96a-4ce8-82d7-2aca46efee83
+- !<SceneObject/09a2f994-685e-4383-9889-524e95bcced9>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ingredient_1
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/0f62f743-a701-4f27-b39f-940db8ebbad1>
+  PrefabRemaps:
+    []
+  Name: SousChef_WelcomeRecipe
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/11e48af2-1490-40eb-8ec2-84b555106cde>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_10
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/12105f2c-5be9-4570-80e7-a7609ee2eed2>
+  PrefabRemaps:
+    []
+  Name: SousChef_ChecklistTitle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/1530e43a-c7eb-4a0e-a621-577e03b8b7c8>
+  PrefabRemaps:
+    []
+  Name: SousChef_ChecklistView
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 12105f2c-5be9-4570-80e7-a7609ee2eed2
+    - !<own> 489736c6-3687-4199-9207-7730d00e5c54
+    - !<own> e4ebb25b-347a-4152-81fe-23af424c9603
+    - !<own> 23dd34ba-4583-4c81-bd51-02cd6f1f33df
+  Components:
+    []
+- !<SceneObject/154c630a-062b-4832-9fcc-c789a39a3187>
+  PrefabRemaps:
+    []
+  Name: SousChefPanelRoot
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 10.000000, y: -25.000000, z: -130.000000}
+    Rotation: {x: -10.852000, y: -4.399000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> a6ba5951-8e3e-4de9-894f-a91ce92b5bb1
+  Components:
+    - !<own> 9ef664d6-f01f-4330-addc-71bce0b24cb6
+- !<SceneObject/18266753-6efd-4bd0-b5d8-a40fae6952f2>
+  PrefabRemaps:
+    []
+  Name: PanCookingSurface
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -4.000000, y: 1.020000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 18.000000, y: 0.100000, z: 18.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c9838a49-d7ee-4283-afba-5a66ea9e9aad
+- !<ScriptComponent/195869b5-e198-4b03-a350-164eb87e434f>
+  PrefabRemaps:
+    []
+  Name: HandVisual
+  Enabled: true
+  ScriptAsset: !<reference> f9b29b39-ec8c-41bd-8b53-769ae9b818b8
+  ScriptInputsDefault:
+    _meshType: true
+    _fullHandMaterial: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      handType: right
+      _meshType: None
+      _fullHandMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/1ad1cf2d-5157-43f9-af29-54f770b71e28>
+  PrefabRemaps:
+    []
+  Name: SousChef_Back
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/1daec3fe-a605-4bbe-be3c-7386ace6f8cf>
+  PrefabRemaps:
+    []
+  Name: SousChef_TimerRing
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> ee2f5bf6-eb8b-4aae-81c5-4edbed0760cc
+    - !<own> 88a3b5f1-406a-419d-893f-b90f994ef6fd
+    - !<own> 88662184-ab98-4d6b-b8db-058300ca6978
+    - !<own> 523de4cd-3de9-4b37-b104-bc18c8ac11bc
+    - !<own> f6edefad-f4fb-4af6-824d-235288fcfac7
+    - !<own> cd65bcfa-8e0b-42d6-8169-4d17f8f1b90b
+    - !<own> c908cd54-71c6-4d4c-8de5-b407926bf61b
+    - !<own> 595f2a8b-90cf-4eff-a65d-20058f2ddd0c
+    - !<own> 53cd33c5-76d0-470c-9bbb-4c18a9219c5b
+    - !<own> b851462c-8b0e-4531-b707-e17f7ecba516
+    - !<own> 11e48af2-1490-40eb-8ec2-84b555106cde
+    - !<own> ec3e00ba-f741-4e82-9879-e61906631ef8
+  Components:
+    []
+- !<SceneObject/20028517-978c-43ef-857e-7f36cc14a5d1>
+  PrefabRemaps:
+    []
+  Name: Configuration
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d118a186-1bdf-4134-9c55-137aa40adb43
+    - !<own> 4d216e7b-2138-40bd-bc82-b31c3cf51b55
+- !<SceneObject/23dd34ba-4583-4c81-bd51-02cd6f1f33df>
+  PrefabRemaps:
+    []
+  Name: SousChef_ChecklistActions
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6db5fdc8-1597-48ca-9caf-881b4c1cd894
+    - !<own> 32398911-c73b-4fce-8ed8-00cbfc502fc9
+    - !<own> 1ad1cf2d-5157-43f9-af29-54f770b71e28
+  Components:
+    []
+- !<ScriptComponent/2421f362-9eaf-499a-85fe-c0acce68e204>
+  PrefabRemaps:
+    []
+  Name: AgentInteractScript
+  Enabled: true
+  ScriptAsset: !<reference> 29091811-e792-46be-bfa4-28ddec5f11be
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/28b4e998-5de1-4e00-9967-1821bbb53ecc>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ingredient_8
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/2b5ae6e3-b926-4ea5-8c07-b2cb91c3d5df>
+  PrefabRemaps:
+    []
+  Name: SousChef_StepLabel
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/2effcceb-692b-4e97-8873-efc9fb737262>
+  PrefabRemaps:
+    []
+  Name: SousChef_Start
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/31e85a47-fa0f-4609-ae3f-4c10cbb251ad>
+  PrefabRemaps:
+    []
+  Name: SousChef_WelcomeMeta
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/32398911-c73b-4fce-8ed8-00cbfc502fc9>
+  PrefabRemaps:
+    []
+  Name: SousChef_CookAnyway
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/36560218-540d-4492-812c-0a4ce1aa2064>
+  PrefabRemaps:
+    []
+  Name: LeafIndex
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c96d95e5-ea9a-4f11-be0b-9ef7c4971da0
+- !<SceneObject/366a81c1-8c1e-4309-8a64-eb5b190f8991>
+  PrefabRemaps:
+    []
+  Name: SousChef_Notice
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/38c3c405-c005-4f49-a403-1d0c9009ec1a>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ingredient_9
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/3b04473e-4a54-4305-8045-e52d9b2c98e7>
+  PrefabRemaps:
+    []
+  Name: "[REQUIRED] Core"
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 20028517-978c-43ef-857e-7f36cc14a5d1
+    - !<own> a1f84c2a-af16-4b69-b2a6-9bfeb3624761
+    - !<own> 85304a43-80b9-42c9-baf2-9c638d291b2f
+    - !<own> 4416ae24-4ec5-4447-ac85-a95a11ef397d
+  Components:
+    []
+- !<SceneObject/3df8aad1-3aad-46bd-b1b0-39e41d13a09b>
+  PrefabRemaps:
+    []
+  Name: SousChef_RecipeView
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2b5ae6e3-b926-4ea5-8c07-b2cb91c3d5df
+    - !<own> 7e2fbaa9-feca-4d8f-a25c-bbd0d236d5e4
+    - !<own> de9d4ed7-3d9e-4298-b7b5-e2aabda797f8
+    - !<own> bd353275-1f02-4513-ac80-ce1a5c1cef0d
+    - !<own> 366a81c1-8c1e-4309-8a64-eb5b190f8991
+  Components:
+    []
+- !<SceneObject/3e2f1da8-e9ce-4040-902f-9cba52f00a0a>
+  PrefabRemaps:
+    []
+  Name: PanHandle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 10.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 8.000000, y: 1.500000, z: 4.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 68e36077-d99f-470e-9f55-6e61cd93af4a
+- !<SceneObject/3faef223-11db-4022-b084-9959f8fdcd70>
+  PrefabRemaps:
+    []
+  Name: PanBody
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -4.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 20.000000, y: 2.000000, z: 20.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e7dd0b82-5615-4d78-9f4f-edbcbe8e9ae8
+- !<SceneObject/415ce497-0ee2-4f32-bd81-0102699cf4b5>
+  PrefabRemaps:
+    []
+  Name: HandVisuals
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 65fd44ad-3e60-4df5-8445-816542501586
+    - !<own> f3638bfe-9a6b-4b6b-b353-0d9f76d01425
+  Components:
+    []
+- !<SceneObject/4416ae24-4ec5-4447-ac85-a95a11ef397d>
+  PrefabRemaps:
+    []
+  Name: MouseInteractor
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a632205a-1429-4123-9f1b-f7b203a9012b
+- !<SceneObject/462637c0-363c-4f80-8f2f-b368b27861c8>
+  PrefabRemaps:
+    []
+  Name: SousChef_CompletionGarnish
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/47bdde11-675b-4004-a882-b25461268bf1>
+  PrefabRemaps:
+    []
+  Name: "[OPTIONAL] Visuals"
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 415ce497-0ee2-4f32-bd81-0102699cf4b5
+    - !<own> a8dd701e-5ef1-4bf1-bb66-dda328426d7d
+  Components:
+    []
+- !<SceneObject/489736c6-3687-4199-9207-7730d00e5c54>
+  PrefabRemaps:
+    []
+  Name: SousChef_ReadyCount
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<ScriptComponent/4d216e7b-2138-40bd-bc82-b31c3cf51b55>
+  PrefabRemaps:
+    []
+  Name: IKLogLevelConfiguration
+  Enabled: true
+  ScriptAsset: !<reference> ff7d0aa1-32aa-4b47-84b7-340260da1ef0
+  ScriptInputsDefault:
+    _debugModeEnabled: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      logLevelFilter: 3
+      _debugModeEnabled: false
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/523de4cd-3de9-4b37-b104-bc18c8ac11bc>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_3
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/53cd33c5-76d0-470c-9bbb-4c18a9219c5b>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_8
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<ScriptComponent/5605e384-3703-491b-87f8-79f866210b6b>
+  PrefabRemaps:
+    []
+  Name: HandInteractor
+  Enabled: true
+  ScriptAsset: !<reference> 4d0b0ec7-e669-4c4e-b2f7-32b9c59f24cc
+  ScriptInputsDefault:
+    indirectDragThreshold: true
+    _drawDebug: true
+    directColliderEnterRadius: true
+    directColliderExitRadius: true
+    directDragThreshold: true
+    forcePokeOnNonDominantPalmProximity: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      indirectDragThreshold: !<float> 10.000000
+      _drawDebug: false
+      handType: left
+      directColliderEnterRadius: !<float> 1.000000
+      directColliderExitRadius: 1.500000
+      directDragThreshold: !<float> 3.000000
+      forcePokeOnNonDominantPalmProximity: false
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/56384eae-e0ad-4334-9b15-710428b37cd6>
+  PrefabRemaps:
+    []
+  Name: SousChef_Restart
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/595f2a8b-90cf-4eff-a65d-20058f2ddd0c>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_7
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/5c18e66e-ec62-4d81-95af-cb7d02526a52>
+  PrefabRemaps:
+    []
+  Name: SousChef_TimerAlert
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/65fd44ad-3e60-4df5-8445-816542501586>
+  PrefabRemaps:
+    []
+  Name: LeftHandVisual
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bf0c3cc6-0aa4-4bfa-b20d-d0af154e735a
+- !<SceneObject/67b20232-eddb-4e5d-a639-ef31f0b633b7>
+  PrefabRemaps:
+    []
+  Name: SousChef_PanIllustration
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<RenderMeshVisual/68e36077-d99f-470e-9f55-6e61cd93af4a>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 36e6a64e-2606-4e36-b045-e2b4e4834c06
+  Mesh: !<reference> 882078c1-89ea-4bf2-bc24-89ea6f228ab1
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/6db5fdc8-1597-48ca-9caf-881b4c1cd894>
+  PrefabRemaps:
+    []
+  Name: SousChef_StartCooking
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/79ef17a2-9212-4258-b01e-7f78cf469c81>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ingredient_0
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/7bace251-34aa-471a-8c9c-210ae54d96b8>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ingredients
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/7be0c4ab-e2f7-4249-baa7-4750b857395f>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ingredient_5
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<RenderMeshVisual/7c91fcd8-54cf-44ef-ba4a-f6accea6f7c0>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> d1bd9dc5-7d55-4129-bb16-10e1e325492d
+  Mesh: !<reference> 882078c1-89ea-4bf2-bc24-89ea6f228ab1
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/7e2fbaa9-feca-4d8f-a25c-bbd0d236d5e4>
+  PrefabRemaps:
+    []
+  Name: SousChef_StepTitle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/81004885-8a4c-473f-9aa2-c2866adb7ae3>
+  PrefabRemaps:
+    []
+  Name: SousChef_WelcomeView
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9fc9c041-38f3-4ce1-b338-8db5e874fb6e
+    - !<own> 0f62f743-a701-4f27-b39f-940db8ebbad1
+    - !<own> 31e85a47-fa0f-4609-ae3f-4c10cbb251ad
+    - !<own> 67b20232-eddb-4e5d-a639-ef31f0b633b7
+    - !<own> 2effcceb-692b-4e97-8873-efc9fb737262
+  Components:
+    []
+- !<SceneObject/81683750-7e45-49ac-9ae5-f9bac3a8966b>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ingredient_2
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/85304a43-80b9-42c9-baf2-9c638d291b2f>
+  PrefabRemaps:
+    []
+  Name: RightHandInteractor
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e3b93f3f-7134-48a1-940d-13cddecae281
+- !<SceneObject/88662184-ab98-4d6b-b8db-058300ca6978>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_2
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/88a3b5f1-406a-419d-893f-b90f994ef6fd>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_1
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/896ac440-cc0c-466a-b32f-cf9ba11613a7>
+  PrefabRemaps:
+    []
+  Name: SousChef_CompletionProgress
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/8b2dd88e-f035-45f8-bb3b-1269b752b13a>
+  PrefabRemaps:
+    - 195869b5-e198-4b03-a350-164eb87e434f: d4da8107-4c33-4f45-469e-e20df6a6ac7e
+    - 20028517-978c-43ef-857e-7f36cc14a5d1: 31059286-43ff-450e-7b8c-b4195ca1dd8e
+    - 3b04473e-4a54-4305-8045-e52d9b2c98e7: 70290c16-3e1e-4ebd-77be-11f99a7f536a
+    - 415ce497-0ee2-4f32-bd81-0102699cf4b5: b1f777fc-9def-4cf7-6afb-038a1427adc4
+    - 4416ae24-4ec5-4447-ac85-a95a11ef397d: b7be8856-93cb-4049-76c3-e4a435b4d049
+    - 47bdde11-675b-4004-a882-b25461268bf1: e7c7be4e-0d9b-4cd3-4515-578e27dfee29
+    - 4d216e7b-2138-40bd-bc82-b31c3cf51b55: 0b47d35b-d9ff-43aa-73e7-94efb366ba58
+    - 5605e384-3703-491b-87f8-79f866210b6b: 93a82b13-f1ae-404a-490c-0905b3c2bab5
+    - 65fd44ad-3e60-4df5-8445-816542501586: f24eade7-4784-4f7b-7076-ef3281b8ed81
+    - 85304a43-80b9-42c9-baf2-9c638d291b2f: 99e6c117-7864-41d8-4c62-17acfe71bc53
+    - 8b2dd88e-f035-45f8-bb3b-1269b752b13a: ac190d7f-8f8a-427c-4cd7-034d38e5ab1c
+    - a1f84c2a-af16-4b69-b2a6-9bfeb3624761: 815b6ca2-77e6-4e1c-7002-5c6207b7cfbd
+    - a632205a-1429-4123-9f1b-f7b203a9012b: 8e635d88-9a0d-4a5d-60c9-6384382137db
+    - a8dd701e-5ef1-4bf1-bb66-dda328426d7d: 3bc29fda-0d40-4a4c-5e2e-10f770dc4149
+    - bc4855ea-070b-4801-81d3-3498307fdcad: f05448db-5a08-4d04-64aa-13723f8d7ce2
+    - bf0c3cc6-0aa4-4bfa-b20d-d0af154e735a: a7ac0bc1-703e-43f5-70cb-91e33cf39e04
+    - d118a186-1bdf-4134-9c55-137aa40adb43: 1a77b076-e485-4ba9-7687-c0f54d4d2802
+    - e3b93f3f-7134-48a1-940d-13cddecae281: 6167dd36-c853-49b0-4d51-842079d5473c
+    - f3638bfe-9a6b-4b6b-b353-0d9f76d01425: 2fb017cb-455d-49d8-7eed-a5fa2584cc71
+  Name: InteractionKit
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3b04473e-4a54-4305-8045-e52d9b2c98e7
+    - !<own> 47bdde11-675b-4004-a882-b25461268bf1
+  Components:
+    []
+- !<ScriptComponent/8d1be0f6-28f2-400c-92ab-82eefa806724>
+  PrefabRemaps:
+    []
+  Name: AgentInspectScript
+  Enabled: true
+  ScriptAsset: !<reference> 0b25079c-f5bf-4c6d-96c4-f43b89dfa213
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/93b1ac4c-93d4-4e6a-9683-6ab42a1b89fd>
+  PrefabRemaps:
+    []
+  Name: SousChefRoot
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 154c630a-062b-4832-9fcc-c789a39a3187
+    - !<own> bc7ad253-d631-49fb-aee7-2e12a2ddb8f9
+    - !<own> d42d07f6-097f-4955-95d3-4c96c28c54a9
+  Components:
+    - !<own> e7ea0ddd-975a-4ffc-b5e5-420688ecd565
+    - !<own> aaeda1a6-bd84-44d6-87fc-a5d224ccb457
+- !<SceneObject/95480b5d-2f15-4981-ba1b-3f5342b4919a>
+  PrefabRemaps:
+    []
+  Name: AiPreviewAgent Handler
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 8d1be0f6-28f2-400c-92ab-82eefa806724
+    - !<own> 2421f362-9eaf-499a-85fe-c0acce68e204
+- !<SceneObject/9a6c2b57-8bf4-4c00-a030-024ef3ea0ecd>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ingredient_3
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<ScriptComponent/9ef664d6-f01f-4330-addc-71bce0b24cb6>
+  PrefabRemaps:
+    []
+  Name: SousChefUI
+  Enabled: true
+  ScriptAsset: !<reference> d5feea67-9617-473b-91b0-da7ae66faa5f
+  ScriptInputsDefault:
+    bodyTextSize: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      bodyTextSize: !<float> 30.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/9fc9c041-38f3-4ce1-b338-8db5e874fb6e>
+  PrefabRemaps:
+    []
+  Name: SousChef_WelcomeTitle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/a1f84c2a-af16-4b69-b2a6-9bfeb3624761>
+  PrefabRemaps:
+    []
+  Name: LeftHandInteractor
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5605e384-3703-491b-87f8-79f866210b6b
+- !<ScriptComponent/a632205a-1429-4123-9f1b-f7b203a9012b>
+  PrefabRemaps:
+    []
+  Name: MouseInteractor
+  Enabled: true
+  ScriptAsset: !<reference> fa8d58de-519f-43c1-a79d-1bfa5fdecfb0
+  ScriptInputsDefault:
+    indirectDragThreshold: true
+    _drawDebug: true
+    mouseTargetingMode: true
+    moveInDepth: true
+    moveInDepthAmount: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      indirectDragThreshold: !<float> 3.000000
+      _drawDebug: false
+      mouseTargetingMode: !<float> 2.000000
+      moveInDepth: false
+      moveInDepthAmount: !<float> 5.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/a6ba5951-8e3e-4de9-894f-a91ce92b5bb1>
+  PrefabRemaps:
+    []
+  Name: SousChef_ContentRoot
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 81004885-8a4c-473f-9aa2-c2866adb7ae3
+    - !<own> 1530e43a-c7eb-4a0e-a621-577e03b8b7c8
+    - !<own> 3df8aad1-3aad-46bd-b1b0-39e41d13a09b
+    - !<own> dcc4757e-ce3c-4e35-8543-d39124dd1071
+    - !<own> 7bace251-34aa-471a-8c9c-210ae54d96b8
+    - !<own> 5c18e66e-ec62-4d81-95af-cb7d02526a52
+  Components:
+    []
+- !<SceneObject/a8dd701e-5ef1-4bf1-bb66-dda328426d7d>
+  PrefabRemaps:
+    []
+  Name: InteractorCursors
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bc4855ea-070b-4801-81d3-3498307fdcad
+- !<AudioComponent/aaeda1a6-bd84-44d6-87fc-a5d224ccb457>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 6f308936-03d6-419d-880a-4816aaf06d93
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/ab7e8e07-fd43-4ff6-81b6-c5c268362b1a>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ingredient_7
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/b851462c-8b0e-4531-b707-e17f7ecba516>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_9
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<ScriptComponent/bc4855ea-070b-4801-81d3-3498307fdcad>
+  PrefabRemaps:
+    []
+  Name: CursorController
+  Enabled: true
+  ScriptAsset: !<reference> 33b8ff0f-4908-4414-8821-6b37f1775435
+  ScriptInputsDefault:
+    drawDebug: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      drawDebug: false
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/bc7ad253-d631-49fb-aee7-2e12a2ddb8f9>
+  PrefabRemaps:
+    []
+  Name: CountertopMarker
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 10.000000, y: -47.000000, z: -130.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 50.000000, y: 1.000000, z: 34.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7c91fcd8-54cf-44ef-ba4a-f6accea6f7c0
+- !<SceneObject/bd33856a-2f64-4606-838f-0005289f935e>
+  PrefabRemaps:
+    []
+  Name: SousChef_LiveTimers
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/bd353275-1f02-4513-ac80-ce1a5c1cef0d>
+  PrefabRemaps:
+    []
+  Name: SousChef_TimerRow
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1daec3fe-a605-4bbe-be3c-7386ace6f8cf
+    - !<own> d2f79051-0501-40a9-b227-ad3a1ed88d39
+  Components:
+    []
+- !<ScriptComponent/bf0c3cc6-0aa4-4bfa-b20d-d0af154e735a>
+  PrefabRemaps:
+    []
+  Name: HandVisual
+  Enabled: true
+  ScriptAsset: !<reference> f9b29b39-ec8c-41bd-8b53-769ae9b818b8
+  ScriptInputsDefault:
+    _meshType: true
+    _fullHandMaterial: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      handType: left
+      _meshType: None
+      _fullHandMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/c908cd54-71c6-4d4c-8de5-b407926bf61b>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_6
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<ScriptComponent/c96d95e5-ea9a-4f11-be0b-9ef7c4971da0>
+  PrefabRemaps:
+    []
+  Name: LeafIndex
+  Enabled: true
+  ScriptAsset: !<reference> ee31260a-4675-4180-b848-968e35113a4d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<RenderMeshVisual/c9838a49-d7ee-4283-afba-5a66ea9e9aad>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 36e6a64e-2606-4e36-b045-e2b4e4834c06
+  Mesh: !<reference> 3c61663b-7cd4-4ca4-9056-9512a05da66a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ScriptComponent/ca24f78b-a96a-4ce8-82d7-2aca46efee83>
+  PrefabRemaps:
+    []
+  Name: ThemeManager
+  Enabled: true
+  ScriptAsset: !<reference> 7ae27bcb-2c1d-4c7a-b5e1-93a8109bd6a2
+  ScriptInputsDefault:
+    _theme: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _theme: System3
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/cac3b04b-c2f4-4f0e-a9f3-b49bbe5b7879>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ingredient_6
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/cd65bcfa-8e0b-42d6-8169-4d17f8f1b90b>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_5
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<ScriptComponent/d118a186-1bdf-4134-9c55-137aa40adb43>
+  PrefabRemaps:
+    []
+  Name: ConfigurationValidator
+  Enabled: true
+  ScriptAsset: !<reference> 5249534b-e5e3-494c-afad-124a32012655
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/d2f79051-0501-40a9-b227-ad3a1ed88d39>
+  PrefabRemaps:
+    []
+  Name: SousChef_Timer
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/d42d07f6-097f-4955-95d3-4c96c28c54a9>
+  PrefabRemaps:
+    []
+  Name: FryingPanMarker
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 10.000000, y: -45.500000, z: -129.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3faef223-11db-4022-b084-9959f8fdcd70
+    - !<own> 18266753-6efd-4bd0-b5d8-a40fae6952f2
+    - !<own> 3e2f1da8-e9ce-4040-902f-9cba52f00a0a
+  Components:
+    []
+- !<SceneObject/d9bc11ee-a8db-45a7-9e0d-4ea6588e708d>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ingredient_4
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/dcc4757e-ce3c-4e35-8543-d39124dd1071>
+  PrefabRemaps:
+    []
+  Name: SousChef_CompletionView
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> f88cf6d4-36e5-44e1-998a-5e1592302941
+    - !<own> 896ac440-cc0c-466a-b32f-cf9ba11613a7
+    - !<own> 462637c0-363c-4f80-8f2f-b368b27861c8
+    - !<own> bd33856a-2f64-4606-838f-0005289f935e
+    - !<own> 56384eae-e0ad-4334-9b15-710428b37cd6
+  Components:
+    []
+- !<SceneObject/de9d4ed7-3d9e-4298-b7b5-e2aabda797f8>
+  PrefabRemaps:
+    []
+  Name: SousChef_NavigationRow
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> f6f385df-d1ad-457f-95c1-fc4d8e8b985a
+    - !<own> e6a55dbc-8f51-4d67-94db-d476f0633198
+    - !<own> df41870c-45f3-445b-a19f-e4b04cddbee7
+  Components:
+    []
+- !<SceneObject/df41870c-45f3-445b-a19f-e4b04cddbee7>
+  PrefabRemaps:
+    []
+  Name: SousChef_Next
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<ScriptComponent/e3b93f3f-7134-48a1-940d-13cddecae281>
+  PrefabRemaps:
+    []
+  Name: HandInteractor
+  Enabled: true
+  ScriptAsset: !<reference> 4d0b0ec7-e669-4c4e-b2f7-32b9c59f24cc
+  ScriptInputsDefault:
+    indirectDragThreshold: true
+    _drawDebug: true
+    handType: true
+    directColliderEnterRadius: true
+    directColliderExitRadius: true
+    directDragThreshold: true
+    forcePokeOnNonDominantPalmProximity: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      indirectDragThreshold: !<float> 10.000000
+      _drawDebug: false
+      handType: right
+      directColliderEnterRadius: !<float> 1.000000
+      directColliderExitRadius: 1.500000
+      directDragThreshold: !<float> 3.000000
+      forcePokeOnNonDominantPalmProximity: false
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/e4ebb25b-347a-4152-81fe-23af424c9603>
+  PrefabRemaps:
+    []
+  Name: SousChef_ChecklistGrid
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 79ef17a2-9212-4258-b01e-7f78cf469c81
+    - !<own> 7be0c4ab-e2f7-4249-baa7-4750b857395f
+    - !<own> 09a2f994-685e-4383-9889-524e95bcced9
+    - !<own> cac3b04b-c2f4-4f0e-a9f3-b49bbe5b7879
+    - !<own> 81683750-7e45-49ac-9ae5-f9bac3a8966b
+    - !<own> ab7e8e07-fd43-4ff6-81b6-c5c268362b1a
+    - !<own> 9a6c2b57-8bf4-4c00-a030-024ef3ea0ecd
+    - !<own> 28b4e998-5de1-4e00-9967-1821bbb53ecc
+    - !<own> d9bc11ee-a8db-45a7-9e0d-4ea6588e708d
+    - !<own> 38c3c405-c005-4f49-a403-1d0c9009ec1a
+  Components:
+    []
+- !<DeviceTracking/e5553c8a-0b7e-4ef4-92d9-3e1318fb82c1>
+  PrefabRemaps:
+    []
+  Name: Device Tracking
+  Enabled: true
+  DeviceTrackingMode: World
+  RotationOptions: !<RotationOptions>
+    InvertRotation: false
+  SurfaceOptions: !<SurfaceOptions>
+    EnhanceWithNativeAR: false
+- !<SceneObject/e6a55dbc-8f51-4d67-94db-d476f0633198>
+  PrefabRemaps:
+    []
+  Name: SousChef_Instruction
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<RenderMeshVisual/e7dd0b82-5615-4d78-9f4f-edbcbe8e9ae8>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 1db7fc47-d062-4ec5-bf39-21897f7bbadb
+  Mesh: !<reference> 3c61663b-7cd4-4ca4-9056-9512a05da66a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ScriptComponent/e7ea0ddd-975a-4ffc-b5e5-420688ecd565>
+  PrefabRemaps:
+    []
+  Name: SousChefMain
+  Enabled: true
+  ScriptAsset: !<reference> 0627d629-cf59-4f78-8076-9cc2d0306a9d
+  ScriptInputsDefault:
+    debugColliders: true
+    chimeVolume: true
+    noticeDuration: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      ui: !<MappingBased.AssignableType_1> 9ef664d6-f01f-4330-addc-71bce0b24cb6
+      timerChime: !<reference.AudioComponent> aaeda1a6-bd84-44d6-87fc-a5d224ccb457
+      debugColliders: false
+      chimeVolume: 0.350000
+      noticeDuration: !<float> 3.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/ec3e00ba-f741-4e82-9879-e61906631ef8>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_11
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/ee2f5bf6-eb8b-4aae-81c5-4edbed0760cc>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_0
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/f326f349-9b8d-4f0c-a4e9-9289fa212afc>
+  PrefabRemaps:
+    []
+  Name: LEAF Plugin Bridge
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f5e63d5a-d823-4db4-ba6f-eec440b62912
+- !<SceneObject/f3638bfe-9a6b-4b6b-b353-0d9f76d01425>
+  PrefabRemaps:
+    []
+  Name: RightHandVisual
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 195869b5-e198-4b03-a350-164eb87e434f
+- !<ScriptComponent/f5e63d5a-d823-4db4-ba6f-eec440b62912>
+  PrefabRemaps:
+    []
+  Name: MessagingBridge
+  Enabled: true
+  ScriptAsset: !<reference> 9aa407db-2872-4afc-a162-cf7faf2a0f29
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/f6edefad-f4fb-4af6-824d-235288fcfac7>
+  PrefabRemaps:
+    []
+  Name: SousChef_Ring_4
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/f6f385df-d1ad-457f-95c1-fc4d8e8b985a>
+  PrefabRemaps:
+    []
+  Name: SousChef_Previous
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/f88cf6d4-36e5-44e1-998a-5e1592302941>
+  PrefabRemaps:
+    []
+  Name: SousChef_CompletionTitle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []

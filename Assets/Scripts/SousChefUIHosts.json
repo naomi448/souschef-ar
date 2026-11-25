@@ -1,0 +1,51 @@
+{
+  "note": "Author these named SceneObjects under the existing panel root; preserve order. UI attaches UIKit components to these hosts, never creates a parallel hierarchy. All local transforms identity except ContentRoot Z=0.10 and ring decorative dots placed by UI polar math. Layout containers are configured by UI with Flex/Grid.",
+  "root": "SousChefPanelRoot",
+  "children": [
+    {"name":"SousChef_ContentRoot","children":[
+      {"name":"SousChef_WelcomeView","children":[
+        {"name":"SousChef_WelcomeTitle"},
+        {"name":"SousChef_WelcomeRecipe"},
+        {"name":"SousChef_WelcomeMeta"},
+        {"name":"SousChef_PanIllustration"},
+        {"name":"SousChef_Start"}
+      ]},
+      {"name":"SousChef_ChecklistView","children":[
+        {"name":"SousChef_ChecklistTitle"},
+        {"name":"SousChef_ReadyCount"},
+        {"name":"SousChef_ChecklistGrid","children":[
+          {"name":"SousChef_Ingredient_0"},{"name":"SousChef_Ingredient_5"},
+          {"name":"SousChef_Ingredient_1"},{"name":"SousChef_Ingredient_6"},
+          {"name":"SousChef_Ingredient_2"},{"name":"SousChef_Ingredient_7"},
+          {"name":"SousChef_Ingredient_3"},{"name":"SousChef_Ingredient_8"},
+          {"name":"SousChef_Ingredient_4"},{"name":"SousChef_Ingredient_9"}
+        ]},
+        {"name":"SousChef_ChecklistActions","children":[
+          {"name":"SousChef_StartCooking"},{"name":"SousChef_CookAnyway"},{"name":"SousChef_Back"}
+        ]}
+      ]},
+      {"name":"SousChef_RecipeView","children":[
+        {"name":"SousChef_StepLabel"},
+        {"name":"SousChef_StepTitle"},
+        {"name":"SousChef_NavigationRow","children":[
+          {"name":"SousChef_Previous"},{"name":"SousChef_Instruction"},{"name":"SousChef_Next"}
+        ]},
+        {"name":"SousChef_TimerRow","children":[
+          {"name":"SousChef_TimerRing","children":[
+            {"name":"SousChef_Ring_0"},{"name":"SousChef_Ring_1"},{"name":"SousChef_Ring_2"},{"name":"SousChef_Ring_3"},
+            {"name":"SousChef_Ring_4"},{"name":"SousChef_Ring_5"},{"name":"SousChef_Ring_6"},{"name":"SousChef_Ring_7"},
+            {"name":"SousChef_Ring_8"},{"name":"SousChef_Ring_9"},{"name":"SousChef_Ring_10"},{"name":"SousChef_Ring_11"}
+          ]},
+          {"name":"SousChef_Timer"}
+        ]},
+        {"name":"SousChef_Notice"}
+      ]},
+      {"name":"SousChef_CompletionView","children":[
+        {"name":"SousChef_CompletionTitle"},{"name":"SousChef_CompletionProgress"},
+        {"name":"SousChef_CompletionGarnish"},{"name":"SousChef_LiveTimers"},{"name":"SousChef_Restart"}
+      ]},
+      {"name":"SousChef_Ingredients"},
+      {"name":"SousChef_TimerAlert"}
+    ]}
+  ]
+}

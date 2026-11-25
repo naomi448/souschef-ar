@@ -1,0 +1,47 @@
+- !<AssetImportMetadata/27401a7a-811b-4598-9780-b684c696a154>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> d5feea67-9617-473b-91b0-da7ae66faa5f
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> d5feea67-9617-473b-91b0-da7ae66faa5f
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> a50c88c6-3a6a-4ca1-9a95-357f5f24d243
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/a50c88c6-3a6a-4ca1-9a95-357f5f24d243>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  RunInEditor: false
+  ComponentUid: 55205179-9b0c-4044-885a-9fdf59ead2e6
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bodyTextSize: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - bodyTextSize: !<float> 30.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input float bodyTextSize = 30 {"hint":"Recipe instruction text size. The panel remains fixed at the stove."}'
